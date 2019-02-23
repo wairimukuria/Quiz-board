@@ -1,4 +1,4 @@
-var answers = ["Not a Number","no value or no object","return","ampersand , semicolon","\"];
+var answers = ["Not a Number","no value or no object","return","ampersand , semicolon","string"];
 var pointPerCorrect = 25;
 
 
@@ -18,7 +18,8 @@ $(document).ready(function(){
       var answerFour = ($("input[type=radio][name=questionFourAnswer]:checked").val());
       var answerFive = ($("input[type=radio][name=questionFiveAnswer]:checked").val());
 
-  if (answerOne === undefined || answerTwo === undefined || answerThree === undefined || answerFour === undefined || answerFive === undefined) {
+
+      if (answerOne === undefined || answerTwo === undefined || answerThree === undefined || answerFour === undefined || answerFive === undefined) {
   $('#questionsIncomplete').text('Please Complete questions Before Submitting');
   $('#questionsIncomplete').fadeOut(10000);
 } else {
@@ -33,11 +34,10 @@ $(document).ready(function(){
   }
         if (answerFour === answers[3]) {
     score += pointPerCorrect;
-}
+  }
         if (answerFive === answers[4]) {
     score += pointPerCorrect;
-}
-
+  }
 
         $("input[type=radio][name=questionOneChoice]:checked").prop('checked', false);
         $("input[type=radio][name=questionTwoChoice]:checked").prop('checked', false);
