@@ -1,6 +1,6 @@
 QUIZ-BOARD
 
-This is a website on which students who are the users take a test which they can answer multiple choice questions and after submitting their answers they know what they scored on their website.22 February 2019
+QUIZ BOARD.This is a website on which students who are the users take a test by answering multiple choice questions and after submitting their answers they know what they scored on their website as the website computes scores based on points attained from every correct answer submitted and outputs the results thereby stating if the students  performed excellently,fairly or poorly and needs to retake the test all based on score ranges.22 February 2019
 
 #### By **Margaret Wairimu Kuria**
 
