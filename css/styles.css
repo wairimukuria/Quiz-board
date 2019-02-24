@@ -13,10 +13,6 @@ h1{
   color: red;
 }
 
-/* #questionOne{
-color: darkgrey;
+#questionsIncomplete{
+  color: red;
 }
-
-#questionTwo{
-  color: lightgrey
-} */
