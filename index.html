@@ -4,7 +4,7 @@
 <head>
   <meta charset="utf-8" />
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
-  <title> quiz board </title>
+  <title>quiz board</title>
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <link href="css/bootstrap.css" rel="stylesheet" type="text/css">
   <link href="css/styles.css" rel="stylesheet" type="text/css">
@@ -18,45 +18,79 @@
       <div class="panel panel-info">
         <h1>QUIZ BOARD</h1>
       </div>
+
       <div class="panel panel-info">
         <form id='questions'>
           <div class="well">
             <div id='questionOne'>
               <div class='question'> <strong>1. What does NaN represent?</strong></div>
-              <input type="radio" name='questionOneAnswer' value='Not a Number'> Not a Number
-              <input type="radio" name='questionOneAnswer' value='Not available Now'> Not available Now
-              <input type="radio" name='questionOneAnswer' value='Not a Noun'> Not a Noun
-              <input type="radio" name='questionOneAnswer' value='None of the above'> None of the above
+              <div class='answer'>
+                <input type="radio" name='questionOneAnswer' value='Not a Number'> Not a Number
+              </div>
+              <div class='answer'>
+                <input type="radio" name='questionOneAnswer' value='Not available Now'> Not available Now
+              </div>
+              <div class='answer'>
+                <input type="radio" name='questionOneAnswer' value='Not a Noun'> Not a Noun
+              </div>
+              <div class='answer'>
+                <input type="radio" name='questionOneAnswer' value='None of the above'> None of the above
+              </div>
             </div>
           </div>
+
 
           <div class="well">
             <div id='questionTwo'>
               <div class='question'><strong>2. What does NULL mean in JavaScript?</strong></div>
-              <input type="radio" name='questionTwoAnswer' value='invalid'> invalid
-              <input type="radio" name='questionTwoAnswer' value='no value or no object'> no value or no object
-              <input type="radio" name='questionTwoAnswer' value='not a number'> not a number
-              <input type="radio" name='questionTwoAnswer' value='undefined value'> undefined value
+              <div class='answer'>
+                <input type="radio" name='questionTwoAnswer' value='invalid'> invalid
+              </div>
+              <div class='answer'>
+                <input type="radio" name='questionTwoAnswer' value='no value or no object'> no value or no object
+              </div>
+              <div class='answer'>
+                <input type="radio" name='questionTwoAnswer' value='not a number'> not a number
+              </div>
+              <div class='answer'>
+                <input type="radio" name='questionTwoAnswer' value='undefined value'> undefined value
+              </div>
             </div>
           </div>
 
           <div class="well">
             <div id='questionThree'>
               <div class='question'><strong>3. Which is not a type of a pop up box available in JavaScript? </strong></div>
-              <input type="radio" name='questionThreeAnswer' value='alert'> alert
-              <input type="radio" name='questionThreeAnswer' value='confirm'> confirm
-              <input type="radio" name='questionThreeAnswer' value=' prompt '> prompt
-              <input type="radio" name='questionThreeAnswer' value='return'> return
+              <div class='answer'>
+                <input type="radio" name='questionThreeAnswer' value='alert'> alert
+              </div>
+              <div class='answer'>
+                <input type="radio" name='questionThreeAnswer' value='confirm'> confirm
+              </div>
+              <div class='answer'>
+                <input type="radio" name='questionThreeAnswer' value=' prompt '> prompt
+              </div>
+              <div class='answer'>
+                <input type="radio" name='questionThreeAnswer' value='return'> return
+              </div>
             </div>
           </div>
 
           <div class="well">
             <div id='questionFour'>
               <div class='question'><strong>4. JavaScript entities start with _ and end with _ ? </strong></div>
-              <input type="radio" name='questionFourAnswer' value='semicolon, colon'> semicolon , colon
-              <input type="radio" name='questionFourAnswer' value='semicolon, ampersand'> semicolon , ampersand
-              <input type="radio" name='questionFourAnswer' value='ampersand, semicolon'> ampersand , semicolon
-              <input type="radio" name='questionFourAnswer' value='ampersand, colon'> ampersand , colon
+              <div class='answer'>
+                <input type="radio" name='questionFourAnswer' value='semicolon, colon'> semicolon , colon
+              </div>
+              <div class='answer'>
+                <input type="radio" name='questionFourAnswer' value='semicolon, ampersand'> semicolon , ampersand
+              </div>
+              <div class='answer'>
+                <input type="radio" name='questionFourAnswer' value='ampersand, semicolon'> ampersand , semicolon
+              </div>
+              <div class='answer'>
+                <input type="radio" name='questionFourAnswer' value='ampersand, colon'> ampersand , colon
+              </div>
             </div>
           </div>
 
@@ -64,20 +98,28 @@
           <div class="well">
             <div id='questionFiveAnswer'>
               <div class='question'><strong>5. which is a datatype?</strong></div>
-              <input type="radio" name='questionFiveAnswer' value='string'> string
-              <input type="radio" name='questionFiveAnswer' value='div'> div
-              <input type="radio" name='questionFiveAnswer' value='class'> class
-              <input type="radio" name='questionFiveAnswer' value='radio'> radio
+              <div class='answer'>
+                <input type="radio" name='questionFiveAnswer' value='string'> string
+              </div>
+              <div class='answer'>
+                <input type="radio" name='questionFiveAnswer' value='div'> div
+              </div>
+              <div class='answer'>
+                <input type="radio" name='questionFiveAnswer' value='class'> class
+              </div>
+              <div class='answer'>
+                <input type="radio" name='questionFiveAnswer' value='radio'> radio
+              </div>
             </div>
           </div>
       </div>
-    </div>
 
-    <div id='questionsIncomplete'></div>
-    <input type="submit" name="results" value="SUBMIT" id="button" class="btn btn-info">
-    <div id='result'></div>
+      <div id='questionsIncomplete'></div>
+      <input type="submit" name="results" value="SUBMIT" id="button" class="btn btn-info">
+    </div>
+    </form>
   </div>
-  </form>
+  <div id='result'></div>
 </body>
 
 </html>
