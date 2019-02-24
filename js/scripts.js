@@ -1,9 +1,9 @@
 var answers = ["Not a Number","no value or no object","return","ampersand , semicolon","string"];
-var pointPerCorrect = 25;
+var pointPerCorrect = 20;
 
 
 function percentage(score) {
-return "Your score is " + parseInt((score / 125) * 100) + "%";
+return "Your score is " + parseInt((score / 100) * 100) + "%";
 }
 
 $(document).ready(function(){
