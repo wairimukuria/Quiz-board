@@ -1,10 +1,19 @@
+.bg-1 {
+    background-color: #1abc9c; /* Green */
+    color: #ffffff;
+  }
 h1{
   color: red;
   font-style: normal;
   font-stretch: extra-expanded;
   font-size: 45px;
   font-size: 50px;
-};
+}
 #questionsIncomplete{
   color: red;
 };
+
+.btn btn-default{
+  background-color: #1abc9c;
+  color: #ffffff;
+}
