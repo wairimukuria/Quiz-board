@@ -4,15 +4,3 @@ h1{
   font-family: cursive;
   font-size: 50px;
 }
-
-#question{
-  color: blue;
-}
-
-#answer{
-  color: red;
-}
-
-#questionsIncomplete{
-  color: red;
-}
