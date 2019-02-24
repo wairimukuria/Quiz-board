@@ -18,7 +18,7 @@ $(document).ready(function() {
     var answerFour = ($("input[type=radio][name=questionFourAnswer]:checked").val());
     var answerFive = ($("input[type=radio][name=questionFiveAnswer]:checked").val());
 
-
+  event.preventDefault();
     if (answerOne === undefined || answerTwo === undefined || answerThree === undefined || answerFour === undefined || answerFive === undefined) {
       $('#questionsIncomplete').text('**Please Complete questions Before Submitting**');
       $('#questionsIncomplete').fadeOut(10000);
@@ -45,8 +45,19 @@ $(document).ready(function() {
       $("input[type=radio][name=questionFourChoice]:checked").prop('checked', false);
       $("input[type=radio][name=questionFiveChoice]:checked").prop('checked', false);
       $('#questionsIncomplete').text('');
-      $('#result').text(percentage(score));
+      var grade = '';
+          if(score>= 80) {
+            grade = 'Excellent';
+          }
+          if(score >= 50 && score < 80) {
+            grade = 'Fair';
+          }
+          if(score < 50) {
+            grade = 'Fail';
+          }
+
+        $('#result').text(percentage(score)+', Remark: '+(grade));
+
     }
-    event.preventDefault();
   });
 });
